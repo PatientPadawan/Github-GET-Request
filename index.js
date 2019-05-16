@@ -9,9 +9,7 @@ function displayResults(responseJson) {
             `<li><h3>${responseJson[i].name}</h3>
             <a href="${responseJson[i].html_url}">${responseJson[i].html_url}</a></li>`)
         };
-
-
-    $('#results').removeClass('hidden');
+     $('#results').removeClass('hidden');
     
 }
 
@@ -30,6 +28,7 @@ function getGitHubHandle(searchTerm) {
     .then(responseJson => displayResults(responseJson))
     .catch(err => {
         $('#js-error-message').text(`That GitHub handle doesn't exist!`);
+        $('$results-list').empty();
     });
 }
 
