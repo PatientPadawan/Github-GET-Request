@@ -9,3 +9,22 @@ body {
 .hidden {
     display: none;
 }
+
+.error-message {
+    color: red;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+li {
+    padding: 10px;
+  }
