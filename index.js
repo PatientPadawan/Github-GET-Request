@@ -28,7 +28,7 @@ function getGitHubHandle(searchTerm) {
     .then(responseJson => displayResults(responseJson))
     .catch(err => {
         $('#js-error-message').text(`That GitHub handle doesn't exist!`);
-        $('$results-list').empty();
+        $('#results-list').empty();
     });
 }
 
